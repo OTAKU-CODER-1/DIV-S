@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        div.static {
+            /* posição por defeito */
+            position: static;
+            border: 3px solid green;
+        }
+
+        div.relative {
+            /* relativo a posição por defeito */
+            position: relative;
+            width: 400px;
+            height: 200px;
+            left: 30px;
+            /*top: 50px;*/
+            border: 3px solid green;
+        }
+
+        div.fixed {
+            /* fixo relativamente ao browser */
+            position: fixed;
+            width: 200px;
+            bottom: 0;
+            right: 0;
+            border: 3px solid green;
+        }
+
+        div.absolute {
+            /* fixo relativamente ao marcador pai */
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            right: 0;
+            bottom: 0;
+            border: 3px solid red;
+        }
+
+        div.sticky {
+            /* fixo relativamente ao browser ativa com o scroll */
+            position: sticky;
+            top: 0;
+            border: 3px solid green;
+            background-color: rgba(255,255,0,0.5);
+        }
+
+        .container {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .topLeft {
+            font-size: 50px;
+            color: gold;
+            position: absolute;
+            top:0;
+        }
+
+        .topRight {
+            font-size: 50px;
+            color: gold;
+            position: absolute;
+            top: 0;
+            right:0;
+        }
+
+        .bottomLeft {
+            font-size: 50px;
+            color: gold;
+            position: absolute;
+            bottom: 1;
+            left:0;
+        }
+
+        .bottomRight {
+            font-size: 50px;
+            color: gold;
+            position: absolute;
+            top: 0;
+            right:0;
+        }
+
+        .centerd {
+            font-size: 50px;
+            color: gold;
+            position: absolute;
+            top: 0;
+            right:0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+
+    <h2>Static</h2>
+    <div class="static">Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</div>
+
+    <h2>Relative</h2>
+    <div class="relative">Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</div>
+
+    <h2>Fixed</h2>
+    <div class="fixed">Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</div>
+
+    <h2>Absolute</h2>
+    <div class="relative">
+        Relative DIV
+        <div class="absolute">Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</div>
+    </div>
+    
+    <h2>Sticky</h2>
+    <div class="sticky">Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</div>
+
+    <p>Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</p>
+    <p>Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</p>
+    <p>Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</p>
+    <p>Suspendisse malesuada turpis hendrerit porttitor maximus. Nunc imperdiet erat lacus, vulputate porttitor nisi porttitor sit amet. In egestas augue sit amet vulputate consectetur. Nam laoreet, ligula vitae ullamcorper laoreet, sapien lacus placerat magna, nec viverra felis purus ut ipsum. In condimentum libero ac metus ullamcorper, a pulvinar metus feugiat. Sed a nulla nulla. Mauris leo elit, dapibus ut euismod eget, finibus sed nisl. Aenean vulputate lobortis porttitor. Fusce varius elit ligula, id condimentum nunc pellentesque sed. Nunc posuere a quam eu hendrerit. Donec non tempus odio, in auctor lectus. Suspendisse potenti. Proin pellentesque varius lorem, non euismod odio hendrerit iaculis. Aenean rutrum, ligula et dapibus ultricies, odio dui maximus tellus, sit amet sollicitudin ante sem in orci. Proin consequat lacus vel justo sodales placerat.</p>
+    
+    <h2>Image</h2>
+    <div class="container">
+        <img alt="descritivo da imagem" title="titulo da imagem" src="/img/slide03.png">
+        <div class="topLeft">Top Left</div>
+        <div class="topRight">Top Right</div>
+        <div class="bottomLeft">Bottom Left</div>
+        <div class="bottomRight">Bottom Right</div>
+        <div class="centered">Centered</div>
+    </div>
+</body>
+</html>
